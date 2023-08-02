@@ -7,6 +7,53 @@
 
 	"use strict";
 
+
+	// Team Page Main-Carousel
+	$('.carousel-one').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 10000,
+		autoplaySpeed: 1000,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			}
+		}
+	});
+
+	// Team Page Sub-Carousel
+	$('#carousel-two').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 1000,
+		autoplaySpeed: 3000,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 2
+			}
+		}
+	});
+
 	$(window).stellar({
     responsive: true,
     parallaxBackgrounds: true,
@@ -235,5 +282,6 @@
 
 
 
+	
 })(jQuery);
 
