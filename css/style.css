@@ -9911,10 +9911,7 @@ section {
     padding: 20px 0 0 ;
     height: 630px;
 }
-#main .main-one .background-img img{
-    height: auto;
-}
-#main .main-one .line {
+#main .main-one .line-15 {
     height: 15px;
     width: 100%;
     background-color: var(--box-bg);
@@ -9937,7 +9934,7 @@ section {
     margin-left: 45px;
 }
 .slider {
-    margin-top: 10px;
+    margin-top: 40px;
     margin-right: 200px;
 }
 .slider .item {
@@ -9954,32 +9951,11 @@ section {
     margin-top: 15px;
 }
 
+
 .slider .item img {
     width: 100px;
 }
-@media (max-width: 1440px) {
-    .owl-carousel .owl-nav .owl-next {
-        bottom: 180px !important;
-        right: 1090px !important;
-    }
-    .owl-carousel .owl-nav .owl-prev {
-        bottom: 180px !important;
-        left: 50px !important;
-    }
 
-    #main .main-one .title{
-        font-size: 28px;
-        margin-top: 40px;
-    }
-    #main .main-one .member-name {
-        font-size: 38px;
-        margin-top: 50px;
-    }
-    #main .main-one .sub-title {
-        font-size: 26px;
-        line-height: 28px;
-        letter-spacing: 1px;
-    }
 
     #main .main-one .video {
         margin-top: 20px;
