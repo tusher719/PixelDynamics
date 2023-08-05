@@ -59,13 +59,13 @@
 	});
 
 	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+		responsive: true,
+		parallaxBackgrounds: true,
+		parallaxElements: true,
+		horizontalScrolling: false,
+		hideDistantElements: false,
+		scrollProperty: 'scroll'
+	});
 
 
 	var fullHeight = function() {
@@ -89,10 +89,10 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
-
-
-   var burgerMenu = function() {
+	$.Scrollax();
+	
+	
+	var burgerMenu = function () {
 
 		$('.js-nav-toggle').on('click', function(event){
 			event.preventDefault();
@@ -113,17 +113,18 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#aside, .js-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+			var container = $("#aside, .js-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				
+				if ($('body').hasClass('offcanvas')) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-nav-toggle').removeClass('active');
+				
+					$('body').removeClass('offcanvas');
+					$('.js-nav-toggle').removeClass('active');
 			
-	    	}
-	    	
-	    }
+				}
+		
+			}
 		});
 
 		$(window).scroll(function(){
@@ -140,26 +141,26 @@
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
+			loop: true,
+			autoplay: true,
+			margin:0,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			nav:false,
+			autoplayHoverPause: false,
+			items: 1,
+			navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
 		});
 
 		$('.author-slider').owlCarousel({

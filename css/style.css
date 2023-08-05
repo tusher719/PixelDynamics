@@ -9819,7 +9819,6 @@ h5,
 /* ===============|| Main End ||=============== */
 
 /* ==============================|| Team Start ||============================== */
-
 /* ===============||Start First Section||=============== */
 .main-sec {
     scroll-snap-type: y mandatory;
@@ -9838,7 +9837,6 @@ section {
 .main-one .white{
     background-color: var(--white);
 }
-
 .owl-theme .owl-dots .owl-dot span {
     margin: 0 0;
 }
@@ -9859,7 +9857,6 @@ section {
     padding: 0 6px 6px;
     border-radius: 5px;
     font-size: 40px;
-
 }
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
@@ -9911,12 +9908,14 @@ section {
     padding: 20px 0 0 ;
     height: 630px;
 }
-#main .main-one .line-15 {
+#main .main-one .background-img img{
+    height: auto;
+}
+#main .main-one .line {
     height: 15px;
     width: 100%;
     background-color: var(--box-bg);
 }
-
 #main .main-one .card-titles {
     color: var(--black);
     font-size: 32px;
@@ -9934,7 +9933,7 @@ section {
     margin-left: 45px;
 }
 .slider {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-right: 200px;
 }
 .slider .item {
@@ -9951,11 +9950,32 @@ section {
     margin-top: 15px;
 }
 
-
 .slider .item img {
     width: 100px;
 }
+@media (max-width: 1440px) {
+    .owl-carousel .owl-nav .owl-next {
+        bottom: 180px !important;
+        right: 1090px !important;
+    }
+    .owl-carousel .owl-nav .owl-prev {
+        bottom: 180px !important;
+        left: 50px !important;
+    }
 
+    #main .main-one .title{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    #main .main-one .member-name {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+    #main .main-one .sub-title {
+        font-size: 26px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
 
     #main .main-one .video {
         margin-top: 20px;
@@ -9971,12 +9991,12 @@ section {
         margin-bottom: 10px;
         letter-spacing: 1px;
     }
-    
+
     #main .main-one .background-img {
         padding: 20px 0 0 ;
         height: 550px;
     }
-    
+
     #main .main-one .line {
         height: 12px;
         width: 100%;
@@ -9992,7 +10012,7 @@ section {
         line-height: 24px;
         margin-top: 10px;
     }
-    
+
     .slider {
         margin-top: 10px;
         margin-right: 100px;
@@ -10007,7 +10027,7 @@ section {
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .slider .item img {
         width: 90px;
     }
@@ -10053,13 +10073,13 @@ section {
         margin-bottom: 20px;
         letter-spacing: 1px;
     }
-    
+
     #main .main-one .background-img {
         padding: 20px 0 0 ;
         height: auto;
-        
+
     }
-    
+
     #main .main-one .line {
         height: 12px;
         width: 100%;
@@ -10076,12 +10096,12 @@ section {
         margin-top: 10px;
         margin-right: -100px;
     }
-    
+
     .slider {
         margin-top: 20px;
         margin-right: -100px;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -10092,7 +10112,7 @@ section {
         margin-top: 30px;
     }
 
-    
+
     #main .main-one .background-img {
         height: 290px;
         margin-top: 20px;
@@ -10104,7 +10124,7 @@ section {
     #main .main-one .background-img img{
         width: 240px !important;
     }
-    
+
 
 
     #main .main-one .card-titles {
@@ -10116,12 +10136,12 @@ section {
         margin-top: 10px;
         margin-right: -150px;
     }
-    
+
     .slider {
         margin-top: 20px;
         margin-right: -150px;
     }
-    
+
 }
 
 @media (max-width: 576px) {
@@ -10181,21 +10201,19 @@ section {
         margin-right: -225px;
         margin-left: -70px;
     }
-    
+
     .slider {
         margin-top: 0px;
         margin-right: -200px;
         margin-left: -70px;
     }
-    
+
 }
 
 
 
 
-
 /* ===============||End First Section||=============== */
-
 /* ===============||Start Second Section||=============== */
 .main-team {
     padding: 60px 0 !important;
@@ -10264,7 +10282,6 @@ section {
 	opacity: 1;
 	height: 100%;
 }
-
 @media (max-width: 768px) {
     .team-item-overlay .content {
         padding: 20px;
