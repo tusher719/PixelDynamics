@@ -400,7 +400,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     line-height: 1.2;
@@ -9831,8 +9831,9 @@ section {
 }
 .main-one {
     /* overflow: hidden; */
-    background: var(--box-bg);
+    background: var(--white);
     height: 100vh;
+
 }
 .main-one .white{
     background-color: var(--white);
@@ -9842,14 +9843,12 @@ section {
     margin: 0 0;
 }
 .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    bottom: 110px !important;
-    right: 1450px !important;
+    bottom: 220px !important;
+    right: 1470px !important;
 }
 .owl-carousel .owl-nav .owl-prev {
-    position: absolute;
-    bottom: 110px !important;
-    left: 75px !important;
+    bottom: 220px !important;
+    left: 50px !important;
 }
 .owl-carousel .owl-nav .owl-prev:focus-visible {
     border: none !important;
@@ -9870,17 +9869,18 @@ section {
     background-color: transparent;
 }
 
-#main .main-one .title{
+#main .main-one .page-title .title{
+    padding-top: 20px;
+    margin-left: 3rem;
     color: var(--black);
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 80px;
+    background-color: var(--white);
 }
 #main .main-one .member-name {
     color: var(--black);
     font-size: 48px;
     font-weight: 700;
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-left: 36px;
 }
 #main .main-one .sub-title {
     color: var(--black);
@@ -9888,26 +9888,33 @@ section {
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 1px;
+    margin-left: 36px;
 }
 #main .main-one .video {
     margin-top: 10px;
+    margin-left: 36px;
 }
 #main .main-one .back-video {
     position: absolute;
-    width: 170px;
+    width: 200px;
 }
 #main .main-one .description {
     color: var(--black);
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: 130px;
+    margin-top: 150px;
     letter-spacing: 1px;
+    margin-left: 36px;
 }
 #main .main-one .background-img {
-    padding: 50px 0 0 60px;
+    padding: 20px 0 0 ;
+    height: 630px;
 }
-#main .main-one .line-15 {
+#main .main-one .background-img img{
+    height: auto;
+}
+#main .main-one .line {
     height: 15px;
     width: 100%;
     background-color: var(--box-bg);
@@ -9918,6 +9925,7 @@ section {
     font-size: 32px;
     font-weight: 700;
     line-height: 20px;
+    margin-top: 10px;
 }
 #main .main-one .card-txt {
     color: var(--black);
@@ -9925,8 +9933,11 @@ section {
     font-weight: 400;
 }
 
+#main .main-one .card {
+    margin-left: 45px;
+}
 .slider {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-right: 200px;
 }
 .slider .item {
@@ -9943,10 +9954,266 @@ section {
     margin-top: 15px;
 }
 
-
 .slider .item img {
     width: 100px;
 }
+@media (max-width: 1440px) {
+    .owl-carousel .owl-nav .owl-next {
+        bottom: 180px !important;
+        right: 1090px !important;
+    }
+    .owl-carousel .owl-nav .owl-prev {
+        bottom: 180px !important;
+        left: 50px !important;
+    }
+
+    #main .main-one .title{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    #main .main-one .member-name {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+    #main .main-one .sub-title {
+        font-size: 26px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+    #main .main-one .video {
+        margin-top: 20px;
+    }
+    #main .main-one .back-video {
+        position: absolute;
+        width: 180px;
+    }
+    #main .main-one .description {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 130px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    
+    #main .main-one .background-img {
+        padding: 20px 0 0 ;
+        height: 550px;
+    }
+    
+    #main .main-one .line {
+        height: 12px;
+        width: 100%;
+        background-color: var(--box-bg);
+    }
+
+
+    #main .main-one .card-titles {
+        font-size: 28px;
+    }
+    #main .main-one .card-txt {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    
+    .slider {
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+    .slider .item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .slider .item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .slider .item img {
+        width: 90px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .owl-carousel .owl-nav .owl-next {
+        bottom: 150px !important;
+        right: 740px !important;
+    }
+    .owl-carousel .owl-nav .owl-prev {
+        bottom: 150px !important;
+        left: 50px !important;
+    }
+
+    #main .main-one .title{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    #main .main-one .member-name {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    #main .main-one .sub-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+    #main .main-one .video {
+        margin-top: 10px;
+    }
+    #main .main-one .back-video {
+        position: absolute;
+        width: 160px;
+    }
+    #main .main-one .description {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    
+    #main .main-one .background-img {
+        padding: 20px 0 0 ;
+        height: auto;
+        
+    }
+    
+    #main .main-one .line {
+        height: 12px;
+        width: 100%;
+        background-color: var(--box-bg);
+    }
+
+
+    #main .main-one .card-titles {
+        font-size: 28px;
+    }
+    #main .main-one .card-txt {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-right: -100px;
+    }
+    
+    .slider {
+        margin-top: 20px;
+        margin-right: -100px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #main .main-one .title{
+        text-align: center;
+    }
+    #main .main-one .member-name {
+        margin-top: 30px;
+    }
+
+    
+    #main .main-one .background-img {
+        height: 290px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main .main-one .background-img img{
+        width: 240px !important;
+    }
+    
+
+
+    #main .main-one .card-titles {
+        font-size: 28px;
+    }
+    #main .main-one .card-txt {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-right: -150px;
+    }
+    
+    .slider {
+        margin-top: 20px;
+        margin-right: -150px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    #main .main-one .title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #main .main-one .member-name {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0;
+    }
+    #main .main-one .sub-title {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-left: 0;
+    }
+
+    #main .main-one .video {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #main .main-one .back-video {
+        position: absolute;
+        width: 120px;
+    }
+    #main .main-one .description {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 90px;
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+        margin-left: 0;
+    }
+
+    #main .main-one .background-img {
+        height: 190px;
+        margin-top: 10px;
+    }
+
+    #main .main-one .background-img img{
+        width: 150px !important;
+    }
+
+    #main .main-one .card-titles {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-right: -200px;
+        margin-left: -70px;
+    }
+    #main .main-one .card-txt {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-right: -225px;
+        margin-left: -70px;
+    }
+    
+    .slider {
+        margin-top: 0px;
+        margin-right: -200px;
+        margin-left: -70px;
+    }
+    
+}
+
 
 
 
