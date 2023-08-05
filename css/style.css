@@ -9608,7 +9608,7 @@ h5,
     align-items: center;
 }
 #aside #logo .logo-con .logoTxt{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 #aside #logo .logo-con .txt1{
     font-size: 20px;
@@ -9646,22 +9646,41 @@ h5,
         margin-bottom: 20px;
     }
 }
+@media (max-width: 768px) {
+    #aside #logo .logo-con {
+        padding-left: 5px;
+    }
+    #aside #logo .logo-con .logoTxt{
+        /* margin-left: 0px; */
+    }
+    #aside #logo .logo-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #aside #logo .logo-con .txt1{
+        margin-right: 20px;
+    }
+    #aside #logo .logo-con .txt2 {
+        margin-right: 20px;
+    }
+}
 #aside #logo a {
     display: inline-block;
     color: var(--text-white);
 }
 
-#aside p {
+#aside p.camption {
     font-size: 14px;
     font-weight: 400px;
     margin-top: 30px;
     margin-bottom: 120px;
     padding-left: 12px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     color: var(--text-white);
 }
 @media (max-width: 1440px) {
-    #aside p {
+    #aside p.camption {
         padding-left: 0px;
     }
 }
@@ -9728,6 +9747,9 @@ h5,
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
+}
+#aside .sidebar-footer .icons {
+    padding-bottom: 40px;
 }
 #aside .sidebar-footer h3 {
     font-size: 18px;
@@ -10346,8 +10368,37 @@ section {
 }
 /* ===============|| Team End ||=============== */
 
+/* ===============|| Main Page Start ||=============== */
 
 
+#main .main-page {
+    height: 100vh;
+    background-color: #0c5460;
+}
+#main .main-page .video-con video{
+    height: 100vh;
+}
+
+
+/* ===============|| Main Page End ||=============== */
+/* ===============|| CopyRight Section Start ||=============== */
+
+.sidebar-footer .copyright-con {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: -30px;
+    font-size: 14px;
+}
+.sidebar-footer .copyright-con a {
+    color: #007bff;
+    font-weight: 600;
+}
+@media (max-width: 1024px) {
+    .sidebar-footer .copyright-con p {
+    padding: 0 0;
+}
+}
+/* ===============|| CopyRight Section End ||=============== */
 
 
 
