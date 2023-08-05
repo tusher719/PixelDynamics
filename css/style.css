@@ -9556,10 +9556,10 @@ h5,
 }
 
 #aside {
-    padding-top: 3em;
+    /* padding-top: 3em;
     padding-bottom: 40px;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 30px; */
     width: 16%;
     position: fixed;
     bottom: 0;
@@ -9593,11 +9593,53 @@ h5,
     }
 }
 #aside #logo {
-    margin-bottom: 1.5em;
+    padding-top: 3em;
+    padding-left: 20px;
+    padding-right: 30px;
+    /* margin-bottom: 1.5em; */
     display: block;
     width: 100%;
     font-weight: 700;
     font-size: 24px;
+}
+#aside #logo .logo-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aside #logo .logo-con .logoTxt{
+    margin-left: 10px;
+}
+#aside #logo .logo-con .txt1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--nav-hover);
+    margin: 0;
+    margin-bottom: -30px !important;
+}
+#aside #logo .logo-con .txt2{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--nav-hover);
+    margin: 0;
+    margin-top: -10px !important;
+}
+@media (max-width: 1440px) {
+    #aside #logo .logo-con {
+        padding-left: 40px;
+    }
+}
+@media (max-width: 1024px) {
+    #aside #logo .logo-con {
+        display: inline-block;
+    }
+    
+#aside #logo .logo-con .txt1{
+    margin-left: -60px;
+}
+#aside #logo .logo-con .txt2{
+    margin-left: -60px;
+}
 }
 @media (max-width: 991.98px) {
     #aside #logo {
@@ -9611,11 +9653,20 @@ h5,
 
 #aside p {
     font-size: 14px;
-    text-align: justify;
     font-weight: 400px;
     margin-top: 30px;
     margin-bottom: 120px;
+    padding-left: 12px;
+    padding-right: 30px;
     color: var(--text-white);
+}
+@media (max-width: 1440px) {
+    #aside p {
+        padding-left: 0px;
+    }
+}
+#aside #main-menu{
+    padding-left: 0 !important;
 }
 #aside #main-menu ul {
     margin: 0;
@@ -9634,7 +9685,7 @@ h5,
     display: block;
     position: relative;
     padding: 10px 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     -moz-transition: all 0.3s ease;
@@ -9646,15 +9697,18 @@ h5,
 #aside #main-menu ul li a i {
     margin-right: 14px;
 }
+
 #aside #main-menu ul li a:hover {
     text-decoration: none;
     color: black;
     background-color: var(--nav-hover);
+    border-left: 5px solid var(--gray);
 }
 
 #aside #main-menu ul li.active a {
     background-color: var(--nav-hover);
     color: var(--text-black);
+    border-left: 5px solid var(--gray);
 }
 #aside #main-menu ul li.active a:after {
     visibility: visible;
@@ -9670,6 +9724,7 @@ h5,
     left: 0;
     right: 0;
     padding: 0 20px;
+    /* padding-bottom: 40px; */
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
@@ -9700,39 +9755,28 @@ h5,
     margin-left: 0;
 }
 #aside .sidebar-footer .social-main .icons ul li a {
-    padding: 6px 14px;
+    padding: 2px 8px;
     display: block;
     font-size: 18px;
-    border-radius: 5px;
-}
-#aside .sidebar-footer .social-main .icons ul li a {
-    background-color: var(--text-white);
-}
-#aside .sidebar-footer .social-main .icons ul li.facebook a i {
-    color: #1877f2;
-}
-#aside .sidebar-footer .social-main .icons ul li.insta a i {
-    color: #f46f30;
-}
-#aside .sidebar-footer .social-main .icons ul li.linke a i {
-    color: #0a66c2;
-}
-#aside .sidebar-footer .social-main .icons ul li.twitter a i {
-    color: #1da1f2;
+    color: var(--box-bg);
 }
 #aside .sidebar-footer .social-main .icons ul li.facebook a:hover {
-    background-color: rgb(24, 119, 242, 0.3);
+    color: #1877f2;
 }
 #aside .sidebar-footer .social-main .icons ul li.insta a:hover {
-    background-color: rgb(195, 42, 163, 0.3);
+    color: #f46f30;
 }
 #aside .sidebar-footer .social-main .icons ul li.linke a:hover {
-    background-color: rgb(10, 102, 194, 0.3);
+    color: #0a66c2;
 }
 #aside .sidebar-footer .social-main .icons ul li.twitter a:hover {
-    background-color: rgb(29, 161, 242, 0.3);
+    color: #1877f2;
 }
-
+@media (max-width: 1024px) {
+    #aside .sidebar-footer .social-main .icons ul li a {
+    padding: 2px 4px;
+}
+}
 /* ===============|| Main Start ||=============== */
 #main {
     width: 100%;
