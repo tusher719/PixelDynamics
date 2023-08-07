@@ -10375,7 +10375,6 @@ section {
 
 #main .main-page {
     height: 100vh;
-    background-color: #0c5460;
 }
 #main .main-page .video-con video{
     height: 100vh;
@@ -10491,6 +10490,98 @@ section {
 
 
 /* ===============|| Services Page End ||=============== */
+
+
+/* ===============|| Portfolio Page Start ||=============== */
+
+#main .portfolio-page {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#main .portfolio-page {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#main .portfolio-page .filter-menu {
+    background-color: rgba(51, 51, 51, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    border-radius: 3px;
+    padding: 6px 8px;
+    z-index: 9;
+}
+#main .portfolio-page .filter-menu span {
+    color: var(--box-bg);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#main .portfolio-page .filter-menu select {
+    color: var(--box-bg);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+}
+#main .portfolio-page .filter-menu select:focus-visible{
+    outline: none;
+}
+#main .portfolio-page .filter-menu select option {
+    /* color: var(--box-bg); */
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-50);
+    background-color: var(--box-bg);
+}
+
+
+#main .portfolio-page .filter-btn.active, .sub-filter-btn.active {
+    background-color: #333;
+    color: white;
+}
+
+#main .portfolio-page .sub-filter-container {
+    margin-left: 5px;
+}
+
+#main .portfolio-page .gallery {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px;
+}
+
+#main .portfolio-page .item {
+    overflow: hidden;
+}
+
+#main .portfolio-page .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    transition: 0.5s ease-in-out;
+}
+#main .portfolio-page .item:hover img{
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    #main .portfolio-page .filter-menu {
+        display: inline-block;
+    }
+    #main .portfolio-page .sub-filter-container {
+        margin-top: 10px;
+    }
+}
+
+/* ===============|| Portfolio Page End ||=============== */
 
 
 
