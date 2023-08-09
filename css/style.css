@@ -35,6 +35,7 @@
     --white: #ffffff;
     --black: #000000;
     --black-50: #333333;
+    --black-25: #666666;
     --text-white: #cccccc;
     --text-black: #181818;
     --nav-hover: #cccccc;
@@ -10542,6 +10543,57 @@ section {
     background-color: var(--text-black);
 }
 
+
+
+.service-type .monthly-pay-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black);
+}
+.service-type .monthly-pay-desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+.service-type .card .card-body {
+    background-color: var(--box-bg);
+}
+.service-type .card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.service-type .card .header .title {
+    color: var(--black);
+    font-size: 32px;
+    font-weight: 700;
+}
+.service-type .card .header .price {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+}
+.service-type .card .body .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black-25);
+    line-height: 27px;
+}
+.service-type .card .body .list-item {
+    /* list-style: none; */
+    /* margin: 0; */
+    padding: 0;
+}
+.service-type .card .body .list-item {
+    margin: 0;
+    padding: 20px 20px;
+}
+.service-type .card .body .list-item li {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 
