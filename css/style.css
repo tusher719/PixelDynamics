@@ -32,8 +32,10 @@
     
     --nav-bg: #181818;
     --box-bg: #D9D9D9;
+    --bg-75: #e5e5e5;
     --white: #ffffff;
     --black: #000000;
+    --black-75: #1f1f1f;
     --black-50: #333333;
     --black-25: #666666;
     --text-white: #cccccc;
@@ -10502,7 +10504,12 @@ section {
         margin-top: 10px;
     }
 }
-
+@media (max-width: 425px) {
+    .service-page .heading {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
 
 /* ===============|| Services Page Section-2 Start ||=============== */
 .service-type .call-con {
@@ -10599,7 +10606,6 @@ section {
 @media (max-width: 1440px) {
     .service-type .card .card-body {
         padding: 30px 30px;
-        background-color: var(--box-bg);
     }
     .service-type .card .header .title {
         font-size: 28px;
@@ -10620,7 +10626,6 @@ section {
     }
     .service-type .card .card-body {
         padding: 20px 16px;
-        background-color: var(--box-bg);
     }
     .service-type .card .header .title {
         font-size: 22px;
@@ -10792,6 +10797,107 @@ section {
 }
 
 /* ===============|| Portfolio Page End ||=============== */
+
+/* ===============|| Blog Page Start ||=============== */
+.blog-page {
+    padding: 20px 20px;
+}
+.blog-page .blog-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.blog-sec-bg {
+    background-color: var(--bg-75);
+    margin-bottom: 20px;
+}
+.blog-page .blog-nav span {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.blog-page .blog-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.blog-page .blog-nav ul li {
+    margin-right: 30px;
+}
+.blog-page .blog-nav ul li a {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.blog-page .search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--black-75);
+    height: 100%;
+}
+.blog-page .search-box i {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.blog-page .search-box .search-bar {
+    border: none;
+    background-color: transparent;
+    height: 70%;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+}
+.blog-page .search-box .search-bar:focus-visible {
+    outline: none;
+}
+.blog-page .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 8px var(--black-25);
+    overflow: hidden;
+}
+.blog-page .card img {
+    height: 260px;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.blog-page .card:hover img {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.blog-page .card .card-body .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--black);
+}
+.blog-page .card .card-body .card-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+.blog-page .card .card-body .card-btn a {
+    color: var(--black-50);
+    border-radius: none;
+    border: 1px solid var(--box-bg);
+    padding: 5px 35px;
+}
+.blog-page .card .card-body .card-btn a:hover {
+    background-color: var(--box-bg);
+}
+.blog-page .card .card-body .card-btn button {
+    border: none;
+    outline: none;
+    background-color: var(--box-bg);
+    border: none;
+    padding: 3px 20px;
+    margin-right: 10px;
+}
+/* ===============|| Blog Page End ||=============== */
 
 
 
