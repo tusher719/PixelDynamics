@@ -10800,7 +10800,7 @@ section {
 
 /* ===============|| Blog Page Start ||=============== */
 .blog-page {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 .blog-page .blog-nav {
     display: flex;
@@ -10847,7 +10847,7 @@ section {
 .blog-page .search-box .search-bar {
     border: none;
     background-color: transparent;
-    height: 70%;
+    height: 40px;
     width: 100%;
     padding: 0 10px;
     color: #fff;
@@ -10897,6 +10897,85 @@ section {
     padding: 3px 20px;
     margin-right: 10px;
 }
+
+
+@media (min-width: 1200px) {
+    .blog-page .blog-nav span {
+        font-size: 20px;
+    }
+    .blog-page .blog-nav ul li {
+        margin-right: 10px;
+    }
+    .blog-page .blog-nav ul li a {
+        font-size: 18px;
+    
+    }
+    .blog-page .card img {
+        height: 200px;
+    }
+    .blog-page .card .card-body .card-title {
+        font-size: 24px;
+    }
+    .blog-page .card .card-body .card-text {
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .blog-page .blog-nav span {
+        font-size: 16px;
+    }
+    .blog-page .blog-nav ul li a {
+        font-size: 16px;
+    }
+    .blog-page .card .card-body .card-title {
+        font-size: 20px;
+    }
+    .blog-page .card .card-body .card-text {
+        font-size: 14px;
+    }
+    .blog-page .card .card-body .card-btn a{
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+    .blog-page .card .card-body .card-btn button {
+        padding: 3px 12px;
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 768px) {
+    .blog-page .search-box {
+        padding: 0 10px;
+    }
+    .blog-page .card .card-body .card-btn button{
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+    .blog-page .card .card-body .card-btn a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 576px) {
+    .blog-sec-bg {
+        margin-bottom: 0px;
+    }
+    .blog-page .blog-nav span {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .blog-page .blog-nav ul li {
+        margin-right: 8px;
+    }
+    .blog-page .blog-nav ul li a {
+        font-size: 14px;
+    
+    }
+}
+
+
+
 /* ===============|| Blog Page End ||=============== */
 
 
