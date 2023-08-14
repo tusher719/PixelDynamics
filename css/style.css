@@ -9757,25 +9757,34 @@ h5,
     bottom: 60px;
     left: 0;
     right: 0;
-    padding: 0 20px;
-    /* padding-bottom: 40px; */
+    
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
 }
+#aside .sidebar-footer a {
+    color: var();
+}
 #aside .sidebar-footer .icons {
-    padding-bottom: 40px;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
 #aside .sidebar-footer h3 {
     font-size: 18px;
     font-weight: 600;
 }
-#aside .sidebar-footer .social-main .heading {
+#aside .sidebar-footer .social-main .heading{
     color: var(--text-white);
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 10px;
-    padding-left: 10px;
+    margin-bottom: 4px;
+    padding: 10px 30px;
+    display: block;
+}
+#aside .sidebar-footer .social-main .heading:hover{
+    color: var(--black);
+    background-color: var(--nav-hover);
+    border-left: 5px solid var(--gray);
 }
 #aside .sidebar-footer .social-main .heading i {
     margin-right: 10px;
@@ -9785,16 +9794,10 @@ h5,
     padding: 0;
     list-style: none;
     display: flex;
-}
-#aside .sidebar-footer .social-main .icons ul li {
-    margin: 5px;
-}
-#aside .sidebar-footer .social-main .icons ul li:first-child {
-    margin-left: 0;
+    justify-content: space-between;
 }
 #aside .sidebar-footer .social-main .icons ul li a {
-    padding: 2px 8px;
-    display: block;
+    padding: 4px 10px;
     font-size: 18px;
     color: var(--box-bg);
 }
@@ -10401,7 +10404,8 @@ section {
 
 .sidebar-footer .copyright-con {
     color: var(--white);
-    text-align: center;
+    text-align: left;
+    padding: 0 20px;
     margin-bottom: -30px;
     font-size: 14px;
 }
@@ -11096,7 +11100,87 @@ section {
 }
 /* ===============|| Blog-Main Page End ||=============== */
 
+.contact-page .contact-sec {
+    width: calc(100% - 440px);
+    margin-top: 100px;
+}
+.contact-page .contact-sec .contact-main {
+    text-align: center;
+    padding: 0 120px;
+    margin-bottom: 70px;
+}
+.contact-page .contact-sec .contact-main h2 {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: 700;
+}
+.contact-page .contact-sec .contact-main p {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.contact-page .contact-sec input[class="form-control"],
+.contact-page .contact-sec select[class="form-control"],
+.contact-page .contact-sec textarea[class="form-control"] {
+    padding: 10px 40px;
+}
+.contact-page .contact-sec .send-btn {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--black);
+    margin-top: 10px;
+    cursor: pointer;
+}
 
+.contact-page .right-sec {
+    background-color: var(--bg-75);
+    width: 440px;
+    height: 100%;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 500px 60px 60px 60px;
+}
+.contact-page .right-sec .logo {
+    margin-bottom: 20px;
+}
+.contact-page .right-sec .icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+.contact-page .right-sec .icons ul li a {
+    color: var(--black);
+    font-size: 24px;
+    padding: 2px 8px;
+}
+.contact-page .right-sec .icons ul li a:hover i.fb {
+    color: #1877f2;
+}
+.contact-page .right-sec .icons ul li a:hover i.linke {
+    color: #0a66c2;
+}
+.contact-page .right-sec .icons ul li a:hover i.insta {
+    color: #f46f30;
+}
+.contact-page .right-sec .icons ul li a:hover i.tw {
+    color: #1877f2;
+}
+.contact-page .right-sec .icons ul li a:hover i.as {
+    color: #0099E5;
+}
+.contact-page .right-sec .icons ul li a:hover i.be {
+    color: #053EFF;
+}
 
 
 
