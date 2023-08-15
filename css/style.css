@@ -9974,22 +9974,44 @@ section {
     letter-spacing: 1px;
     margin-left: 36px;
 }
-#main .main-one .video {
-    margin-top: 10px;
-    margin-left: 36px;
+#main .main-one .experience {
+    margin: 0 36px;
+    display: flex;
+    margin-top: 50px;
 }
-#main .main-one .back-video {
-    position: absolute;
-    width: 200px;
+
+#main .main-one .experience .first-exp {
+    margin-right: 20px;
+}
+#main .main-one .experience .first-exp,
+#main .main-one .experience .second-exp{
+    border-left: 6px solid var(--black);
+    padding: 0 20px;
+}
+#main .main-one .experience .first-exp h4,
+#main .main-one .experience .second-exp h4{
+    color: var(--black-25);
+    font-size: 16px;
+    font-weight: 400;
+}
+#main .main-one .experience .first-exp h2,
+#main .main-one .experience .second-exp h2{
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
 }
 #main .main-one .description {
     color: var(--black);
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
-    margin-top: 150px;
+    line-height: 26px;
+    margin-top: 50px;
     letter-spacing: 1px;
     margin-left: 36px;
+    padding-right: 100px;
+}
+#main .main-one .description .desc2{
+    margin-top: 20px;
 }
 #main .main-one .background-img {
     padding: 20px 0 0 ;
@@ -9998,11 +10020,20 @@ section {
 #main .main-one .background-img img{
     height: auto;
 }
-#main .main-one .line {
-    height: 15px;
-    width: 100%;
+#main .main-one .secont-sec {
     background-color: var(--box-bg);
+    padding-top: 35px;
 }
+#main .main-one .card {
+    background-color: var(--box-bg);
+    margin-left: 40px;
+    border: none;
+    margin-right: 200px;
+}
+#main .main-one .card-body {
+    padding: 0;
+}
+
 #main .main-one .card-titles {
     color: var(--black);
     font-size: 32px;
@@ -10015,26 +10046,15 @@ section {
     font-size: 20px;
     font-weight: 400;
 }
-
-#main .main-one .card {
-    margin-left: 45px;
-}
 .slider {
-    margin-top: 10px;
-    /* margin-right: 200px; */
+    margin: 10px 0;
+    
 }
 .slider .item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-.slider .item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.item.item-one {
-    margin-top: 15px;
+    height: 100px;
 }
 
 .slider .item img {
@@ -10063,14 +10083,6 @@ section {
         line-height: 28px;
         letter-spacing: 1px;
     }
-
-    #main .main-one .video {
-        margin-top: 20px;
-    }
-    #main .main-one .back-video {
-        position: absolute;
-        width: 180px;
-    }
     #main .main-one .description {
         font-size: 20px;
         line-height: 24px;
@@ -10082,12 +10094,6 @@ section {
     #main .main-one .background-img {
         padding: 20px 0 0 ;
         height: 550px;
-    }
-
-    #main .main-one .line {
-        height: 12px;
-        width: 100%;
-        background-color: var(--box-bg);
     }
 
 
@@ -10120,6 +10126,19 @@ section {
 
 }
 
+/* @media (max-width: 1200px) {} */
+@media (max-width: 1380px) {
+    .owl-carousel .owl-nav .owl-next {
+        bottom: 180px !important;
+        right: 1040px !important;
+    }
+    .owl-carousel .owl-nav .owl-prev {
+        bottom: 180px !important;
+        left: 50px !important;
+    }
+
+}
+
 @media (max-width: 1024px) {
     .owl-carousel .owl-nav .owl-next {
         bottom: 150px !important;
@@ -10144,14 +10163,7 @@ section {
         line-height: 28px;
         letter-spacing: 1px;
     }
-
-    #main .main-one .video {
-        margin-top: 10px;
-    }
-    #main .main-one .back-video {
-        position: absolute;
-        width: 160px;
-    }
+    
     #main .main-one .description {
         font-size: 18px;
         line-height: 20px;
@@ -10164,12 +10176,6 @@ section {
         padding: 20px 0 0 ;
         height: auto;
 
-    }
-
-    #main .main-one .line {
-        height: 12px;
-        width: 100%;
-        background-color: var(--box-bg);
     }
 
 
@@ -10247,15 +10253,7 @@ section {
         letter-spacing: 1px;
         margin-left: 0;
     }
-
-    #main .main-one .video {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-    #main .main-one .back-video {
-        position: absolute;
-        width: 120px;
-    }
+    
     #main .main-one .description {
         font-size: 16px;
         line-height: 16px;
@@ -10302,7 +10300,7 @@ section {
 /* ===============||End First Section||=============== */
 /* ===============||Start Second Section||=============== */
 .main-team {
-    padding: 60px 0 !important;
+    /* padding: 60px 0 !important; */
     /* height: 100vh; */
     overflow: hidden;
 }
