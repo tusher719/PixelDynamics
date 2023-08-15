@@ -9584,7 +9584,7 @@ h5,
     right: 0;
     overflow-y: hidden;
     z-index: 1001;
-    background: var(--nav-bg);
+    background-color: var(--black);
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -9608,6 +9608,7 @@ h5,
         background: var(--nav-bg);
     }
 }
+
 #aside #logo {
     padding-top: 3em;
     padding-left: 30px;
@@ -9621,6 +9622,9 @@ h5,
 #aside #logo .logo-con {
     display: flex;
     justify-content: flex-start;
+}
+#aside #logo .logo-con img{
+    width: 36px;
 }
 #aside #logo .logo-con .logoTxt{
     margin-left: 20px;
@@ -11098,6 +11102,9 @@ section {
 }
 /* ===============|| Blog-Main Page End ||=============== */
 
+
+/* ===============|| Contact Page Start ||=============== */
+
 .contact-page .contact-sec {
     width: calc(100% - 440px);
     margin-top: 100px;
@@ -11142,7 +11149,12 @@ section {
     position: fixed;
     right: 0;
     top: 0;
-    padding: 500px 60px 60px 60px;
+    padding: 60px 60px;
+}
+.contact-page .right-sec .section-con{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 60px;
 }
 .contact-page .right-sec .logo {
     margin-bottom: 20px;
@@ -11179,6 +11191,50 @@ section {
 .contact-page .right-sec .icons ul li a:hover i.be {
     color: #053EFF;
 }
+
+/* @media (min-width: 992px) {} */
+@media (max-width: 1024px) {
+    .contact-page .contact-sec {
+        width: calc(100% - 320px);
+        margin-top: 100px;
+    }
+    .contact-page .contact-sec .contact-main {
+        padding: 0 50px;
+        margin-bottom: 70px;
+    }
+    .contact-page .contact-sec .contact-main h2 {
+        font-size: 48px;
+    }
+    .contact-page .right-sec {
+        width: 320px;
+        height: 100%;
+        float: right;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 60px 40px;
+    }
+    .contact-page .right-sec .section-con{
+        padding-right: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-page .contact-sec {
+        width: 100%;
+        padding: 0 50px;
+        margin-top: 100px;
+    }
+    .contact-page .contact-sec .contact-main h2 {
+        font-size: 38px;
+    }
+    .contact-page .contact-sec .contact-main p {
+        padding: 0 50px;
+    }
+    .contact-page .right-sec {
+        display: none;
+    }
+}
+/* ===============|| Contact Page End ||=============== */
 
 
 
