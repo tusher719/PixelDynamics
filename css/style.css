@@ -2,7 +2,7 @@
  * Md Mehedi Hasan has developed this website.
  * My personal website is //http://tusherdev.com/
  */
-:root {
+ :root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -32,7 +32,7 @@
     
     --nav-bg: #181818;
     --box-bg: #D9D9D9;
-    --bg-75: #e5e5e5;
+    --bg-75: #EBEBEB;
     --white: #ffffff;
     --black: #000000;
     --black-75: #1f1f1f;
@@ -41,6 +41,7 @@
     --text-white: #cccccc;
     --text-black: #181818;
     --nav-hover: #cccccc;
+    --box-bg-2: #F5F5F5;
     
     --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
@@ -104,7 +105,6 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--black-50);
-    border-radius: 5px;
 }
 
 /*===============||End scroll bar||===============*/
@@ -739,8 +739,8 @@ pre code {
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 13px;
+    padding-left: 13px;
 }
 
 .col {
@@ -9559,7 +9559,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-    line-height: 1.5;
+    line-height: 1.2;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
     font-family: 'Nunito Sans', sans-serif;
@@ -9585,11 +9585,11 @@ h5,
     overflow-y: hidden;
     z-index: 1001;
     background-color: var(--black);
-    -moz-transition: all 0.5s ease;
+    /* -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease; */
+    /* transition: all 0.5s ease; */
 }
 @media (min-width: 992px) {
     #aside {
@@ -9610,10 +9610,9 @@ h5,
 }
 
 #aside #logo {
-    padding-top: 3em;
+    padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    /* margin-bottom: 1.5em; */
     display: block;
     width: 100%;
     font-weight: 700;
@@ -9625,9 +9624,10 @@ h5,
 }
 #aside #logo .logo-con img{
     width: 36px;
+    height: 36px;
 }
 #aside #logo .logo-con .logoTxt{
-    margin-left: 20px;
+    margin: -3px 0px 0 20px;
 }
 #aside #logo .logo-con .txt1{
     font-size: 20px;
@@ -9641,7 +9641,7 @@ h5,
     font-weight: 400;
     color: var(--nav-hover);
     margin: 0;
-    margin-top: -10px !important;
+    margin-top: -14px !important;
 }
 @media (max-width: 1440px) {
     #aside #logo .logo-con .txt1{
@@ -9692,10 +9692,9 @@ h5,
 
 #aside p.camption {
     font-size: 14px;
-    font-weight: 400px;
-    margin-top: 30px;
-    margin-bottom: 120px;
-    /* padding-right: 30px; */
+    font-weight: 300px;
+    margin-top: 20px;
+    margin-bottom: 220px;
     color: var(--text-white);
 }
 @media (max-width: 1440px) {
@@ -9758,7 +9757,7 @@ h5,
 }
 #aside .sidebar-footer {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 0;
     right: 0;
     
@@ -9771,7 +9770,6 @@ h5,
 }
 #aside .sidebar-footer .icons {
     padding: 0 20px;
-    margin-bottom: 30px;
 }
 #aside .sidebar-footer h3 {
     font-size: 18px;
@@ -9923,18 +9921,15 @@ section {
     height: 100vh;
 
 }
-.main-one .white{
-    background-color: var(--white);
-}
 .owl-theme .owl-dots .owl-dot span {
     margin: 0 0;
 }
 .owl-carousel .owl-nav .owl-next {
-    bottom: 220px !important;
+    bottom: 210px !important;
     right: 1470px !important;
 }
 .owl-carousel .owl-nav .owl-prev {
-    bottom: 220px !important;
+    bottom: 210px !important;
     left: 50px !important;
 }
 .owl-carousel .owl-nav .owl-prev:focus-visible {
@@ -9958,17 +9953,18 @@ section {
 .page-title .title{
     color: var(--black);
     background-color: var(--white);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    padding-top: 20px;
-    margin-left: 3rem;
+    padding-top: 32px;
+    margin-left: 62px;
+    text-transform: capitalize;
 }
 #main .main-one .member-name {
     color: var(--black);
     font-size: 48px;
     font-weight: 700;
-    margin-top: 50px;
-    margin-left: 36px;
+    margin-top: 58px;
+    margin-left: 46px;
 }
 #main .main-one .sub-title {
     color: var(--black);
@@ -9976,12 +9972,12 @@ section {
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 1px;
-    margin-left: 36px;
+    margin-left: 50px;
 }
 #main .main-one .experience {
-    margin: 0 36px;
     display: flex;
     margin-top: 50px;
+    margin-left: 50px;
 }
 
 #main .main-one .experience .first-exp {
@@ -10011,28 +10007,29 @@ section {
     line-height: 26px;
     margin-top: 50px;
     letter-spacing: 1px;
-    margin-left: 36px;
+    margin-left: 50px;
     padding-right: 100px;
 }
 #main .main-one .description .desc2{
     margin-top: 20px;
 }
 #main .main-one .background-img {
-    padding: 20px 0 0 ;
-    height: 630px;
+    margin-left: 125px;
+    height: 600px;
+    width: 531px;
 }
-#main .main-one .background-img img{
-    height: auto;
+.line {
+    height: 10px;
+    width: 100%;
+    background-color: var(--bg-75);
 }
 #main .main-one .secont-sec {
-    background-color: var(--box-bg);
-    padding-top: 35px;
+    padding-top: 30px;
 }
 #main .main-one .card {
-    background-color: var(--box-bg);
-    margin-left: 40px;
     border: none;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 40px;
 }
 #main .main-one .card-body {
     padding: 0;
@@ -10049,9 +10046,10 @@ section {
     color: var(--black);
     font-size: 20px;
     font-weight: 400;
+    margin-top: 10px;
 }
 .slider {
-    margin: 10px 0;
+    margin: 20px 0;
     
 }
 .slider .item {
@@ -10062,7 +10060,8 @@ section {
 }
 
 .slider .item img {
-    width: 100px;
+    width: 74px;
+    height: 74px;
 }
 @media (max-width: 1440px) {
     .owl-carousel .owl-nav .owl-next {
@@ -10310,17 +10309,37 @@ section {
 }
 .team-item{
 	position: relative;
-    border-radius: 5px;
+    border-radius: 0px;
     overflow: hidden;
+    margin-top: 30px;
 }
 .team-item img {
-	height: 380px;
+    height: 380px;
     width: 380px;
     object-fit: cover;
-    transition: 0.5s all ease-in-out;
+    position: relative;
+    transition: all 0.3s !important;
+}
+.img-title{
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+}
+.img-title h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--bg-75);
+}
+.img-title h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black-25);
+}
+.team-item:hover .img-title {
+    display: none;
 }
 .team-item:hover img {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .team-item .team-item-overlay{
 	height: 0%;
@@ -10328,7 +10347,7 @@ section {
 	background: rgba(0,0,0,.6);
 	position: absolute;
 	bottom: 0px;
-	transition: 0.5s all ease-in-out;
+	transition: 0.3s all ease-in-out;
 }
 .team-item-overlay .content {
     padding: 30px;
@@ -10346,7 +10365,7 @@ section {
 }
 .team-item-overlay .content .line {
     background-color: var(--white);
-    width: 100%;
+    width: 50%;
     height: 3px;
     margin: 16px 0;
 }
@@ -10355,7 +10374,7 @@ section {
     align-items: center;
 }
 .team-item-overlay .content .work i {
-    font-size: 16px;
+    font-size: 12px;
     color: var(--white);
 	margin-right: 10px;
 }
@@ -10369,6 +10388,9 @@ section {
 .team-item:hover .team-item-overlay{
 	opacity: 1;
 	height: 100%;
+}
+.bottom-section{
+    margin-bottom: 40px;
 }
 @media (max-width: 768px) {
     .team-item-overlay .content {
@@ -10425,29 +10447,50 @@ section {
 
 /* ===============|| Services Page Start ||=============== */
 .service-page {
+    margin-left: 10px;
     margin-bottom: 40px;
+}
+.service-title .title{
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 32px;
+    margin-left: 52px;
+    text-transform: capitalize;
 }
 .service-page .heading {
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
     color: var(--black);
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 0 40px;
 }
-.service-page .card-con {
-    padding: 8px 20px;
+
+.service-img{
+    padding-right: 0 !important;
+    padding-left: 65px !important;
+}
+.service-img img{
+    height: 220px;
+    margin-top: 15px;
+}
+.service-box-con{
+    padding: 0 40px;
+    margin-top: 37px;
 }
 
 
 .service-page .card-con {
-    padding: 16px 16px;
-    margin-top: 30px;
-    transition: 0.3s ease-in-out;
-    box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.5);
+    padding: 15px 15px;
+    margin: 13px 0;
+    background-color: var(--box-bg-2);
 }
-
 .service-page .card-con:hover {
-    box-shadow: 6px 6px 10px rgba(51, 51, 51, 0.4);
+    padding: 14px 14px;
+    /* background-color: var(--white); */
+    border: 1px solid var(--black);
 }
 .service-page .card-con .card-body .service-card-heading {
     display: flex;
@@ -10459,7 +10502,7 @@ section {
     font-size: 16px;
 }
 .service-page .card-con .card-body .service-card-heading .title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 24px;
     color: var(--black-50);
@@ -10472,9 +10515,9 @@ section {
     margin-top: 16px;
 }
 .service-page .card-con .card-body ul li{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 32px;
     color: var(--black);
 }
 
@@ -10506,6 +10549,12 @@ section {
 }
 
 /* ===============|| Services Page Section-2 Start ||=============== */
+.service-type .service-con {
+    padding: 0 6px;
+}
+.service-type .mid-section {
+    margin-top: 112px;
+}
 .service-type .call-con {
     display: flex;
     justify-content: space-between;
@@ -10513,8 +10562,7 @@ section {
     border: 2px solid var(--black);
     padding: 25px 40px;
     color: var(--black);
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 .service-type .call-con .pay .title{
     font-size: 32px;
@@ -10528,7 +10576,7 @@ section {
 }
 .service-type .call-con .call a{
     border: none;
-    padding: 30px 100px;
+    padding: 20px 100px;
     font-size: 20px;
     font-weight: 700;
     color: var(--white);
@@ -10536,6 +10584,10 @@ section {
 }
 
 
+.service-type .subscri-sec{
+    margin: 50px 45px 0;
+
+}
 
 .service-type .monthly-pay-title {
     font-size: 32px;
@@ -10552,7 +10604,7 @@ section {
 }
 .service-type .card .card-body {
     padding: 30px 45px;
-    background-color: var(--box-bg);
+    background-color: var(--bg-75);
 }
 .service-type .card .header {
     display: flex;
@@ -10569,6 +10621,7 @@ section {
     color: var(--black);
     font-size: 24px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .service-type .card .card-body .sub-title {
     font-size: 20px;
@@ -10576,11 +10629,9 @@ section {
     color: var(--black-25);
     line-height: 27px;
 }
+
 .service-type .card .card-body .list-item {
-    padding: 0;
-}
-.service-type .card .card-body .list-item {
-    padding: 20px 20px;
+    padding: 20px 0 25px 20px;
 }
 .service-type .card .card-body .list-item li {
     color: var(--black);
@@ -10590,16 +10641,16 @@ section {
 .service-type .card .card-body a {
     color: var(--white);
     background-color: var(--black);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 0;
     width: 100%;
     text-align: center;
 }
 
 @media (max-width: 1440px) {
     .service-type .card .card-body {
-        padding: 30px 30px;
+        padding: 34px 34px;
     }
     .service-type .card .header .title {
         font-size: 28px;
@@ -10692,6 +10743,20 @@ section {
     .service-type .card .card-body {
         padding: 16px 16px;
     }
+}
+
+
+
+
+
+.service-type .package-con {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 0 60px;
+}
+.service-type .package-con .call-con {
+    border: none;
+    background-color: var(--bg-75);
 }
 
 /* ===============|| Services Page Section-2 End ||=============== */
@@ -10803,7 +10868,7 @@ section {
 }
 .blog-sec-bg {
     background-color: var(--bg-75);
-    margin-bottom: 20px;
+    margin: 0px;
 }
 .blog-page .blog-nav span {
     color: var(--black);
@@ -10852,8 +10917,8 @@ section {
 .blog-page .card {
     border: none;
     border-radius: 0;
-    box-shadow: 2px 2px 8px var(--black-25);
     overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
 .blog-page .card img {
     height: 260px;
@@ -10879,6 +10944,9 @@ section {
     border-radius: none;
     border: 1px solid var(--box-bg);
     padding: 5px 35px;
+}
+.blog-page .card:hover {
+    box-shadow: 2px 2px 8px #d5d5d5;
 }
 .blog-page .card .card-body .card-btn a:hover {
     background-color: var(--box-bg);

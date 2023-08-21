@@ -15,7 +15,7 @@
 		nav: true,
 		dots: false,
 		autoplay: true,
-		autoplayTimeout: 10000,
+		autoplayTimeout: 100000000,
 		autoplaySpeed: 1000,
 		responsiveClass: true,
 		responsive: {
@@ -53,7 +53,7 @@
 				items: 1
 			},
 			1000: {
-				items: 6
+				items: 8
 			}
 		}
 	});
