@@ -9628,6 +9628,7 @@ h5,
 }
 #aside #logo .logo-con .logoTxt{
     margin: -3px 0px 0 20px;
+    line-height: 1.5;
 }
 #aside #logo .logo-con .txt1{
     font-size: 20px;
