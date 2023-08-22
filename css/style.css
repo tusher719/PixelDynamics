@@ -10319,7 +10319,7 @@ section {
     width: 380px;
     object-fit: cover;
     position: relative;
-    transition: all 0.3s !important;
+    /* transition: all 0.3s !important; */
 }
 .img-title{
     position: absolute;
@@ -10340,12 +10340,12 @@ section {
     display: none;
 }
 .team-item:hover img {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .team-item .team-item-overlay{
 	height: 0%;
 	width: 100%;
-	background: rgba(0,0,0,.6);
+    background-color: var(--text-black);
 	position: absolute;
 	bottom: 0px;
 	transition: 0.3s all ease-in-out;
@@ -10485,12 +10485,13 @@ section {
 
 .service-page .card-con {
     padding: 15px 15px;
-    margin: 13px 0;
+    margin: 15px 0px;
     background-color: var(--box-bg-2);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0,0,0,0);
 }
 .service-page .card-con:hover {
-    padding: 14px 14px;
-    /* background-color: var(--white); */
+    background-color: var(--white);
     border: 1px solid var(--black);
 }
 .service-page .card-con .card-body .service-card-heading {
