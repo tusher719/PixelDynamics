@@ -15,7 +15,8 @@
 		nav: true,
 		dots: false,
 		autoplay: true,
-		autoplayTimeout: 100000000,
+		autoplayTimeout: 8000,
+		autoplayHoverPause: true,
 		autoplaySpeed: 1000,
 		responsiveClass: true,
 		responsive: {
