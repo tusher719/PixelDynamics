@@ -10457,7 +10457,10 @@ section {
     height: 100vh;
 }
 #main .main-page .video-con video{
+    /* width: 100%; */
+    position: absolute;
     height: 100vh;
+    right: 0;
 }
 
 
@@ -11385,7 +11388,38 @@ section {
         display: none;
     }
 }
-/* ===============|| Contact Page End ||=============== */
+
+
+
+/* ===============|| Calendly Page Start ||=============== */
+
+.Calendly-sec{
+    width: calc(100% - 395px);
+    margin-top: 145px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.Calendly-sec .title {
+    margin-top: 32px;
+    font-weight: 700;
+    color: var(--black);
+}
+.Calendly-sec .sub-title{
+    padding: 0 150px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--black);
+}
+.Calendly-sec  .calendly-con {
+    margin-top: 45px;
+    width: 752px;
+}
+/* ===============|| Calendly Page End ||=============== */
+
+/* ==================================================
+================|| Contact Page End ||===============
+ ==================================================== */
 
 
 
