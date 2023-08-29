@@ -9743,18 +9743,19 @@ h5,
 #aside #main-menu ul li.active a {
     background-color: var(--nav-hover);
     color: var(--text-black);
-    border-left: 5px solid var(--gray);
+    /* border-left: 5px solid var(--gray); */
 }
 
 #aside #main-menu ul li a .icons {
     display: block;
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
 }
 #aside #main-menu ul li a .icon-portfolio {
     background-image: url('../images/icon/portfolio.svg');
     margin-right: 26px;
 }
+#aside #main-menu ul li.active a .icon-portfolio,
 #aside #main-menu ul li a:hover .icon-portfolio {
     background-image: url('../images/icon/portfolio2.svg');
 }
@@ -9763,6 +9764,7 @@ h5,
     background-image: url('../images/icon/services.svg');
     margin-right: 26px;
 }
+#aside #main-menu ul li.active a .icon-services,
 #aside #main-menu ul li a:hover .icon-services {
     background-image: url('../images/icon/services2.svg');
 }
@@ -9771,6 +9773,7 @@ h5,
     background-image: url('../images/icon/team.svg');
     margin-right: 26px;
 }
+#aside #main-menu ul li.active a .icon-team,
 #aside #main-menu ul li a:hover .icon-team {
     background-image: url('../images/icon/team2.svg');
 }
@@ -9779,9 +9782,34 @@ h5,
     background-image: url('../images/icon/blog.svg');
     margin-right: 26px;
 }
+#aside #main-menu ul li.active a .icon-blog,
 #aside #main-menu ul li a:hover .icon-blog {
     background-image: url('../images/icon/blog2.svg');
 }
+
+#aside #main-menu ul li a .icontact {
+    display: block;
+    height: 14px !important;
+    width: 16px !important;
+}
+
+#aside #main-menu ul li a .icon-contact {
+    background-image: url('../images/icon/contact.svg');
+    margin-right: 26px;
+}
+
+#aside #main-menu ul li.active a .icon-contact,
+#aside #main-menu ul li a:hover .icon-contact {
+    background-image: url('../images/icon/contact2.svg');
+}
+
+
+
+
+/* #aside .sidebar-footer .social-main .heading .icon-contact {
+    background-image: url('../images/icon/contact.svg');
+    margin-right: 26px;
+} */
 
 #aside #main-menu ul li.active a:after {
     visibility: visible;
@@ -10364,14 +10392,14 @@ section {
     left: 28px;
 }
 .img-title h3{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--bg-75);
 }
 .img-title h5{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    color: var(--black-25);
+    color: var(--box-bg );
 }
 .team-item:hover .img-title {
     display: none;
@@ -11323,10 +11351,14 @@ section {
 }
 .contact-page .right-sec .logo {
     margin-bottom: 20px;
+    margin-left: 8px;
 }
 .contact-page .right-sec .logo img{
     height: 140px;
     width: 140px;
+}
+.contact-page .right-sec .logo-txt{
+    margin-left: 6px;
 }
 .contact-page .right-sec .logo-txt img{
     width: 250px;
@@ -11395,12 +11427,12 @@ section {
 
 .Calendly-sec{
     width: calc(100% - 395px);
-    margin-top: 145px;
+    margin-top: 180px;
     margin-bottom: 50px;
     text-align: center;
 }
 .Calendly-sec .title {
-    margin-top: 32px;
+    /*margin-top: 32px;*/
     font-weight: 700;
     color: var(--black);
 }
@@ -11410,11 +11442,13 @@ section {
     font-weight: 400;
     line-height: 27px;
     color: var(--black);
+    margin-top: 10px;
 }
-.Calendly-sec  .calendly-con {
-    margin-top: 45px;
+.Calendly-sec .calendly-con {
+    margin-top: 25px;
     width: 752px;
-}
+    margin-left: -21px;
+
 /* ===============|| Calendly Page End ||=============== */
 
 /* ==================================================
