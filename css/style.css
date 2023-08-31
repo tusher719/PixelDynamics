@@ -10022,7 +10022,6 @@ section {
     font-size: 28px;
     font-weight: 700;
     padding-top: 32px;
-    margin-left: 62px;
     text-transform: capitalize;
 }
 #main .main-one .member-name {
@@ -10139,6 +10138,9 @@ section {
         left: 50px !important;
     }
 
+    .page-title .title{
+        margin-left: 0px;
+    }
     #main .main-one .title{
         font-size: 28px;
         margin-top: 40px;
@@ -10306,6 +10308,9 @@ section {
 }
 
 @media (max-width: 576px) {
+    .page-title .title{
+        font-size: 22px;
+    }
 
     #main .main-one .title{
         font-size: 18px;
@@ -10404,9 +10409,7 @@ section {
 .team-item:hover .img-title {
     display: none;
 }
-.team-item:hover img {
-    /* transform: scale(1.1); */
-}
+
 .team-item .team-item-overlay{
 	height: 0%;
 	width: 100%;
@@ -10517,6 +10520,7 @@ section {
 /* ===============|| Services Page Start ||=============== */
 .service-page {
     margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 40px;
 }
 .service-title .title{
@@ -10544,6 +10548,7 @@ section {
 .service-img img{
     height: 220px;
     margin-top: 15px;
+    object-fit: cover;
 }
 .service-box-con{
     padding: 0 40px;
@@ -10592,9 +10597,30 @@ section {
 }
 
 @media (max-width: 1440px) {
+
+    .service-img img{
+        height: 200px;
+    }
     .service-page .heading {
         font-size: 38px;
         line-height: 48px;
+    }
+    .service-page .card-con .card-body .service-card-heading {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .service-page .card-con .card-body .service-card-heading .icon {
+        margin-top: 2px;
+    }
+    .service-page .card-con .card-body .service-card-heading .title {
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .service-img img{
+        height: 175px;
+        margin-top: 15px;
     }
 }
 @media (max-width: 1024px) {
@@ -10608,10 +10634,31 @@ section {
 }
 @media (max-width: 768px) {
     .service-page .mask-img {
-        margin-top: 10px;
+        margin-top: 23px;
     }
 }
 @media (max-width: 425px) {
+    .service-page {
+        margin-right: 10px;
+    }
+    .service-box-con{
+        padding: 0 18px;
+    }
+    .service-page .heading{
+        padding: 18px;
+    }
+    .service-page .mask-img {
+        margin-top: 10px;
+    }
+    .service-img {
+        padding: 0 33px !important;
+    }
+    .service-title .title{
+        font-size: 24px;
+    }
+    .service-page .heading{
+        margin-top: 12px;
+    }
     .service-page .heading {
         font-size: 22px;
         line-height: 28px;
@@ -10620,7 +10667,7 @@ section {
 
 /* ===============|| Services Page Section-2 Start ||=============== */
 .service-type .service-con {
-    padding: 0 6px;
+    padding: 0 43px 0 40px;
 }
 .service-type .mid-section {
     margin-top: 112px;
@@ -10655,8 +10702,7 @@ section {
 
 
 .service-type .subscri-sec{
-    margin: 50px 45px 0;
-
+    margin: 50px 90px 9px 90px;
 }
 
 .service-type .monthly-pay-title {
@@ -10732,6 +10778,9 @@ section {
     .service-type .card .card-body .sub-title {
         font-size: 18px;
     }
+    .service-type .subscri-sec {
+        margin: 50px 60px 9px 60px;
+    }
 }
 @media (max-width: 1024px) {
     .service-type .monthly-pay-title {
@@ -10751,6 +10800,9 @@ section {
     }
     .service-type .card .card-body .sub-title {
         font-size: 16px;
+    }
+    .service-type .subscri-sec {
+        margin: 50px 28px 9px 28px;
     }
 }
 @media (max-width: 768px) {
@@ -10779,6 +10831,9 @@ section {
     }
 }
 @media (max-width: 576px) {
+    .service-type .service-con{
+        padding: 0 23px 0 20px;
+    }
     .service-type .call-con {
         display: inline-block;
     }
@@ -10794,7 +10849,10 @@ section {
         margin-top: 40px;
     }
     .service-type .call-con .call a{
-        padding: 10px 70px;
+        padding: 10px 65px;
+    }
+    .service-type .subscri-sec {
+        margin: 50px 28px 9px 28px;
     }
     .service-type .monthly-pay-title {
         font-size: 24px;
@@ -10803,6 +10861,9 @@ section {
     .service-type .monthly-pay-desc {
         font-size: 16px;
         line-height: 20px;
+    }
+    .service-type .package-con{
+        padding: 0px 20px;
     }
 }
 @media (max-width: 375px) {
@@ -10818,19 +10879,43 @@ section {
 
 
 
-
-
 .service-type .package-con {
     margin-top: 20px;
     margin-bottom: 60px;
-    padding: 0 60px;
+    padding: 0 104px;
 }
 .service-type .package-con .call-con {
     border: none;
     background-color: var(--bg-75);
 }
+@media (max-width: 1440px) {
+    .service-type .package-con {
+        padding: 0 74px;
+    }
+}
+@media (max-width: 992px) {
+    .service-page .card-con .card-body .service-card-heading .icon{
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    .service-page .card-con .card-body ul li {
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 1024px) {
+    .service-type .call-con .pay .desc {
+        font-size: 16px;
+    }
+    .service-type .call-con .pay .title {
+        font-size: 26px;
+    }
+    .service-type .package-con {
+        padding: 0 40px;
+    }
+}
 /* ===============|| Services Page Section-2 End ||=============== */
+
 
 
 
